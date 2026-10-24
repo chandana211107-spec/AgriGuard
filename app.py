@@ -6,8 +6,8 @@ import subprocess
 app = Flask(__name__)
 CORS(app)
 
-PROLOG_PATH = r"C:\Program Files\swipl\bin\swipl.exe"
-FACTS_PATH = r"C:\Users\chiti\OneDrive\Documents\AgriGuard\facts.pl"
+PROLOG_PATH = "swipl"
+FACTS_PATH = "/app/facts.pl"
 
 @app.route("/")
 def home():
