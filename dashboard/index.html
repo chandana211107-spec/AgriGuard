@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AgriGuard - Crop Disease Expert System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            🌱 AgriGuard
+        </div>
+
+        <p>Intelligent Crop Disease Prediction & Farm Management</p>
+    </header>
+
+    <main class="dashboard">
+
+        <section class="welcome">
+            <h1>Early Crop Disease Prediction</h1>
+
+            <p>
+                Select your crop, environmental conditions and observed symptoms
+                to get an expert-system based prediction.
+            </p>
+        </section>
+
+        <section class="card">
+
+            <h2>🌾 Crop Information</h2>
+
+            <label for="crop">Select Crop</label>
+
+            <select id="crop">
+                <option value="">-- Select Crop --</option>
+                <option value="rice">Rice</option>
+                <option value="tomato">Tomato</option>
+                <option value="chilli">Chilli</option>
+                <option value="maize">Maize</option>
+                <option value="cotton">Cotton</option>
+            </select>
+
+        </section>
+
+        <section class="card">
+
+            <h2>🌦️ Environmental Conditions</h2>
+
+            <div class="input-grid">
+
+                <div>
+                    <label for="temperature">Temperature</label>
+                    <select id="temperature">
+                        <option value="">-- Select --</option>
+                        <option value="low">Low</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="humidity">Humidity</label>
+                    <select id="humidity">
+                        <option value="">-- Select --</option>
+                        <option value="low">Low</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="rainfall">Rainfall</label>
+                    <select id="rainfall">
+                        <option value="">-- Select --</option>
+                        <option value="low">Low</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="high">High</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="soil">Soil Type</label>
+                    <select id="soil">
+                        <option value="">-- Select --</option>
+                        <option value="clay">Clay</option>
+                        <option value="loamy">Loamy</option>
+                        <option value="sandy">Sandy</option>
+                        <option value="silty">Silty</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="growth">Growth Stage</label>
+                    <select id="growth">
+                        <option value="">-- Select --</option>
+                        <option value="seedling">Seedling</option>
+                        <option value="vegetative">Vegetative</option>
+                        <option value="flowering">Flowering</option>
+                        <option value="fruiting">Fruiting</option>
+                        <option value="maturity">Maturity</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="pest">Pest Presence</label>
+                    <select id="pest">
+                        <option value="">-- Select --</option>
+                        <option value="whiteflies">Whiteflies</option>
+                        <option value="aphids">Aphids</option>
+                        <option value="thrips">Thrips</option>
+                        <option value="caterpillars">Caterpillars</option>
+                        <option value="none">None</option>
+                    </select>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="card">
+
+            <h2>🍃 Observed Symptoms</h2>
+
+            <p>Select the symptoms observed on the crop.</p>
+
+            <div class="symptoms">
+
+                <label>
+                    <input type="checkbox" value="yellow_leaves">
+                    Yellow Leaves
+                </label>
+
+                <label>
+                    <input type="checkbox" value="brown_spots">
+                    Brown Spots
+                </label>
+
+                <label>
+                    <input type="checkbox" value="leaf_curling">
+                    Leaf Curling
+                </label>
+
+                <label>
+                    <input type="checkbox" value="wilting">
+                    Wilting
+                </label>
+
+                <label>
+                    <input type="checkbox" value="white_patches">
+                    White Patches
+                </label>
+
+                <label>
+                    <input type="checkbox" value="leaf_spots">
+                    Leaf Spots
+                </label>
+
+                <label>
+                    <input type="checkbox" value="stunted_growth">
+                    Stunted Growth
+                </label>
+
+                <label>
+                    <input type="checkbox" value="stem_lesions">
+                    Stem Lesions
+                </label>
+
+                <label>
+                    <input type="checkbox" value="leaf_blight">
+                    Leaf Blight
+                </label>
+
+                <label>
+                    <input type="checkbox" value="rust_colored_spots">
+                    Rust-Colored Spots
+                </label>
+
+                <label>
+                    <input type="checkbox" value="dark_lesions">
+                    Dark Lesions
+                </label>
+
+                <label>
+                    <input type="checkbox" value="powdery_growth">
+                    Powdery Growth
+                </label>
+
+            </div>
+
+        </section>
+
+        <section class="action">
+
+            <button id="predictButton">
+                🔍 Predict Disease
+            </button>
+
+        </section>
+
+        <section class="result-card" id="result">
+
+            <h2>🧠 AgriGuard Prediction</h2>
+
+            <div id="resultContent">
+
+                <p>
+                    Your prediction result will appear here.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            AgriGuard — Prolog Based Intelligent Expert System
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
