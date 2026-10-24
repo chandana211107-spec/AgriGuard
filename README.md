@@ -70,6 +70,14 @@ AgriGuard currently supports:
 - Cotton Alternaria Leaf Spot
 - Cotton Fusarium Wilt
 
+## 🖥️ Dashboard Preview
+
+![AgriGuard Dashboard](Screenshot%202026-10-24%20110250.png)
+
+![AgriGuard Prediction](Screenshot%202026-10-24%20110258.png)
+
+![AgriGuard Results](Screenshot%202026-10-24%20110310.png)
+
 ## 🧠 How AgriGuard Works
 
 ```text
