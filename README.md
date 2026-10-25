@@ -144,6 +144,5 @@ Recommended Actions
 | JavaScript | User interaction and API communication |
 | Python | Backend integration |
 | Flask | Web backend/API
-Live dashboard link:
-[https://agriguard-v6xa.onrender.com
+Live dashboard link:[https://agriguard-v6xa.onrender.com
 ](url)
